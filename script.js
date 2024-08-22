@@ -19,69 +19,6 @@ for(var i=0;i<boxes.length;i++) {
     })
 }
 
-        //------------------------------------------------------------------------
-                                                    // for-each loop with jquery
-            /*$(boxes).each(function() {
-                $(this).text("");
-                $(this).click( ()=> {
-                    if(!gameOver && $(this).text() === "") {
-                        $(this).text(turnValue);
-                    }
-                });
-            })*/
-
-        //------------------------------------------------------------------------
-                                                    // for-each loop with js
-            /*jsbox.forEach(value => {
-                value.innerHTML = "";
-                value.addEventListener("click", ()=> {
-                    if(!gameOver && value.innerHTML === "") {
-                        value.innerHTML = turnValue;
-                    }
-                });
-            })*/
-
-        //------------------------------------------------------------------------
-                                                    // for loop with jquery
-            /*for(var i=0;i<boxes.length;i++) {
-                $(boxes[i]).text("");
-                $(boxes[i]).click(function() {
-                    if(!gameOver && $(this).text() === "") {
-                        $(this).text(turnValue);
-                    }
-                });
-            }*/
-
-        //------------------------------------------------------------------------
-                                                    // for loop with js
-            /*for(var i=0;i<jsbox.length;i++) {
-                jsbox[i].innerHTML = "";
-                jsbox[i].addEventListener("click", function() {
-                    if(gameOver == false && this.innerHTML === "") {
-                        this.innerHTML = turnValue;
-                    }
-                });
-            }/*
-                /*
-                -------------self content wrong
-                    let content = this.innerHTML;
-                    jsbox[i].addEventListener("click", function() {
-                        if(gameOver == false && content === "") {
-                            this.innerHTML = turnValue;
-                            console.log(jsbox[i]);
-                        }
-                    });
-                -------------ai content correct
-                    jsbox[i].addEventListener("click", function(){
-                        if(gameOver == false) {
-                            if(this.innerHTML == "") {
-                                this.innerHTML = turnValue;
-                            }
-                        }
-                    });
-                */
-        //------------------------------------------------------------------------
-
 function changeValue() {
     if(turnValue === "X") {
         turnValue = "O";
